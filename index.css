@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+}
+.header {
+  background-color: #f9e400;
+  text-align: center;
+  grid-area: header;
+}
+.form {
+  background-color: #ffaf00;
+  width: 500px;
+  padding: 10px;
+  margin: 60px auto;
+  display: grid;
+  grid-area: form;
+  border-radius: 5px;
+}
+
+.form div {
+  margin: 20px auto;
+}
+.form div h1 {
+  text-align: left;
+}
+.students {
+  display: grid;
+  background-color: #ffaf00;
+  box-sizing: border-box;
+  margin: 60px auto;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 1px;
+  overflow: auto;
+  height: 70%;
+}
+
+.footer {
+  background-color: #f9e400;
+  text-align: center;
+}
+
+table {
+  position: relative;
+}
+
+table,
+th,
+td {
+  border: none;
+  text-align: center;
+  padding: 10px;
+  background-color: #f5004f;
+  border-radius: 5px;
+}
+
+.table {
+  border: none;
+  font-size: x-large;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: x-large;
+  border: none;
+  background-color: #f9e400;
+  color: white;
+}
+body {
+  background-color: #7c00fe;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.button {
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5004f;
+  color: white;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "form form students students"
+    "form form students students";
+}
+
+.table_heading th {
+  padding: 10px;
+}
+.table tbody tr td {
+  background-color: #f9e400;
+}
+.table tbody tr td button {
+  background-color: #f5004f;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 6px;
+  font-size: medium;
+}
+.studentsDetail .edit,
+.studentsDetail .delete,
+.studentsDetail .save {
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 1px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.studentsDetail input[type="text"] {
+  width: 100%;
+  padding: 2px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+.table tbody {
+  max-width: fit-content;
+  overflow: scroll;
+}
